@@ -90,7 +90,7 @@ const config: Config = {
               items: [
                   {
                       label: 'Signals & Symbols',
-                      to: '/projects/Signals-and-Symbols',
+                      to: '/Projects/Signals-and-Symbols',
                   },
                   ],
               },

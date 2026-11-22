@@ -39,7 +39,7 @@ function ProjectsSection()
             <div className={styles.buttons}>
             <Link
                 className="button button--primary button--lg"
-                to="/projects/signals-and-symbols">
+                to="/Projects/signals-and-symbols">
                 Signals & Symbols
                 </Link>
                 </div>
