@@ -41,6 +41,10 @@ const config: Config = {
       {
         docs: false,
         blog: {
+          routeBasePath: 'devlog',
+          blogTitle: 'Devlog',
+          blogDescription: 'Development updates from Thowan.',
+
           showReadingTime: true,
           feedOptions: {
             type: ['rss', 'atom'],
@@ -66,32 +70,33 @@ const config: Config = {
     // Replace with your project's social card
     image: 'img/docusaurus/docusaurus-social-card.jpg',
     colorMode: {
-      respectPrefersColorScheme: true,
+        defaultMode: 'dark',
+        disableSwitch: false,
+        respectPrefersColorScheme: true,
     },
     navbar: {
-      title: 'Thowan',
+/*       title: 'Thowan',
       logo: {
         alt: 'Thowan',
         src: 'img/thowan/ThowanBigGrin.jpg',
-      },
+      }, */
       items: [
           {to: '/', label: 'Home', position: 'left'},
 
           {
               type: 'dropdown',
               label: 'Projects',
-              to: '/projects',
               position: 'left',
               items: [
                   {
                       label: 'Signals & Symbols',
-                      to: '/projects/Signals & Symbols - VotV Mod',
+                      to: '/projects/Signals-and-Symbols',
                   },
                   ],
               },
 
 
-        {to: '/blog', label: 'DevLog', position: 'left'},
+        {to: '/devlog', label: 'DevLog', position: 'left'},
         {
           href: 'https://github.com/thowan-codes',
           label: 'GitHub',
@@ -103,29 +108,16 @@ const config: Config = {
       style: 'dark',
       links: [
         {
-          title: 'Docs',
+          title: 'Contacts',
           items: [
-            {
-              label: 'Tutorial',
-              to: '/docs/intro',
-            },
-          ],
-        },
-        {
-          title: 'Community',
-          items: [
-            {
-              label: 'Stack Overflow',
-              href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-            },
             {
               label: 'Discord',
-              href: 'https://discordapp.com/invite/docusaurus',
+              to: 'https://discordapp.com/users/141646284401541120',
             },
-            {
-              label: 'X',
-              href: 'https://x.com/docusaurus',
-            },
+                {
+                  label: 'GitHub',
+                  href: 'https://github.com/thowan-codes',
+                },
           ],
         },
         {
@@ -133,16 +125,12 @@ const config: Config = {
           items: [
             {
               label: 'DevLog',
-              to: '/blog',
-            },
-            {
-              label: 'GitHub',
-              href: 'https://github.com/facebook/docusaurus',
+              to: '/devlog',
             },
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} Thowan. All rights reserved.`,
     },
     prism: {
       theme: prismThemes.github,

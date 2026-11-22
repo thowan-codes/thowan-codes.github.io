@@ -1,19 +1,15 @@
-facebook:
-  label: Facebook
-  permalink: /facebook
-  description: Facebook tag description
+signals-and-symbols:
+  label: Signals & Symbols
+  description: Development updates for the Signals & Symbols VotV mod.
 
-hello:
-  label: Hello
-  permalink: /hello
-  description: Hello tag description
+voices-of-the-void:
+  label: Voices of the Void
+  description: Mods and projects for Voices of the Void.
 
-docusaurus:
-  label: Docusaurus
-  permalink: /docusaurus
-  description: Docusaurus tag description
+site:
+  label: Site
+  description: Updates to thowan-codes.github.io.
 
-hola:
-  label: Hola
-  permalink: /hola
-  description: Hola tag description
+personal:
+  label: Personal
+  description: Updates about my life, who I am, or what I'm up to outside of development.

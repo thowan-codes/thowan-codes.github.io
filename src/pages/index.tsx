@@ -17,17 +17,36 @@ function HomepageHeader() {
           {siteConfig.title}
         </Heading>
         <p className="hero__subtitle">{siteConfig.tagline}</p>
-        <div className={styles.buttons}>
-          <Link
-            className="button button--secondary button--lg"
-            to="/docs/intro">
-            Docusaurus Tutorial - 5min ⏱️
-          </Link>
-        </div>
+        <img
+          className={styles.heroImage}
+          src="/img/thowan/ThowanBigGrin.jpg"
+          alt="The goofy boi himself"
+        />
       </div>
     </header>
   );
 }
+
+function ProjectsSection()
+    {
+        return (
+            <section className={styles.projects} aria-labelledby="projects-heading">
+            <div className="container">
+            <Heading as="h2" id="projects-heading">
+            Projects
+            </Heading>
+
+            <div className={styles.buttons}>
+            <Link
+                className="button button--primary button--lg"
+                to="/projects/signals-and-symbols">
+                Signals & Symbols
+                </Link>
+                </div>
+                </div>
+                </section>
+            );
+    }
 
 export default function Home(): ReactNode {
   const {siteConfig} = useDocusaurusContext();
@@ -37,7 +56,7 @@ export default function Home(): ReactNode {
       description="Description will go into a meta tag in <head />">
       <HomepageHeader />
       <main>
-        <HomepageFeatures />
+        <ProjectsSection />
       </main>
     </Layout>
   );

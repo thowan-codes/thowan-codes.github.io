@@ -8,6 +8,9 @@
   text-align: center;
   position: relative;
   overflow: hidden;
+
+  background: #3ac4cc;
+  color: #000000;
 }
 
 @media screen and (max-width: 996px) {
@@ -20,4 +23,17 @@
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.projects {
+  padding: 4rem 0;
+  text-align: center;
+}
+
+.heroImage {
+    display: block;
+    width: min(24rem, 80vw);
+    height: auto;
+    margin: 2rem auto 0;
+    border-radius: 0.75rem;
 }

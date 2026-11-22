@@ -1,0 +1,80 @@
+.hero {
+  min-height: 30rem;
+  display: flex;
+  align-items: end;
+  padding: 3rem;
+  color: white;
+
+  background:
+    linear-gradient(
+      to top,
+      rgba(5, 8, 14, 0.94),
+      rgba(5, 8, 14, 0.18)
+    ),
+    url('/img/VotV/VotV-SS1.png')
+      center / cover no-repeat;
+}
+
+.heroContent {
+  max-width: 48rem;
+  text-align: left;
+}
+
+.eyebrow {
+  margin-bottom: 0.5rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #a7d8ff;
+}
+
+.projectContent {
+  padding: 2rem 3rem 4rem;
+
+  background-image:
+    linear-gradient(
+      rgba(20, 20, 20, 0.88),
+      rgba(20, 20, 20, 0.94)
+    ),
+    url('/img/VotV/VotV-Title-Screen.png');
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.projectIcon {
+  float: right;
+  width: 16rem;
+  max-width: 42%;
+  height: auto;
+  margin: 0.25rem 2rem 1rem 0;
+}
+
+@media screen and (max-width: 600px) {
+  .projectIcon {
+    float: none;
+    display: block;
+    width: min(16rem, 100%);
+    max-width: 100%;
+    margin: 0 auto 1.5rem;
+  }
+}
+
+/* Override Light Mode */
+
+:global(html[data-theme='light']) .projectContent {
+  color: #f5f7fa;
+
+  background-image:
+    linear-gradient(
+      rgba(5, 8, 14, 0.82),
+      rgba(5, 8, 14, 0.92)
+    ),
+    url('/img/VotV/VotV-Title-Screen.png');
+}
+
+:global(html[data-theme='light']) .projectContent a {
+  color: #6ee0c9;
+}
