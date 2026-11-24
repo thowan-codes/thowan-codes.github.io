@@ -2,7 +2,9 @@ name: Deploy Docusaurus to GitHub Pages
 
 on:
   push:
-    branches: [main]
+    branches: 
+      - main
+      - DevLog-Updates
   workflow_dispatch:
 
 permissions:
@@ -12,14 +14,26 @@ permissions:
 
 concurrency:
   group: pages
-  cancel-in-progress: false
+  cancel-in-progress: true
 
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
+      - name: Checkout website base
         uses: actions/checkout@v6
+        with:
+          ref: main
+          fetch-depth: 1
+
+      - name: Replace blog with latest DevLog-Updates content
+        shell: bash
+        run: |
+          git fetch --no-tags --depth=1 origin \
+            +refs/heads/DevLog-Updates:refs/remotes/origin/DevLog-Updates
+          rm -rf -- blog
+          git archive --format=tar origin/DevLog-Updates -- blog | tar -x
+          test -d blog
 
       - name: Set up Node
         uses: actions/setup-node@v6
