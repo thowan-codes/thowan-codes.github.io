@@ -30,10 +30,10 @@ jobs:
         shell: bash
         run: |
           git fetch --no-tags --depth=1 origin \
-            +refs/heads/DevLog-Updates:refs/remote/origin/DevLog-Updates
+            +refs/heads/DevLog-Updates:refs/remotes/origin/DevLog-Updates
           rm -rf -- blog
           git archive --format=tar origin/DevLog-Updates -- blog | tar -x
-          text -d blog
+          test -d blog
 
       - name: Set up Node
         uses: actions/setup-node@v6
