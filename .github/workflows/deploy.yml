@@ -4,7 +4,7 @@ on:
   push:
     branches: 
       - main
-      - DevLog
+      - DevLog-Updates
   workflow_dispatch:
 
 permissions:
@@ -26,13 +26,13 @@ jobs:
           ref: main
           fetch-depth: 1
 
-      - name: Replace blog with latest DevLog content
+      - name: Replace blog with latest DevLog-Updates content
         shell: bash
         run: |
           git fetch --no-tags --depth=1 origin \
-            +refs/heads/DevLog:refs/remote/origin/DevLog
+            +refs/heads/DevLog-Updates:refs/remote/origin/DevLog-Updates
           rm -rf -- blog
-          git archive --format=tar origin/DevLog -- blog | tar -x
+          git archive --format=tar origin/DevLog-Updates -- blog | tar -x
           text -d blog
 
       - name: Set up Node
