@@ -1,14 +1,64 @@
+# Projects
 signals-and-symbols:
   label: Signals & Symbols
   description: Development updates for the Signals & Symbols VotV mod.
+thowans-mod-utilities:
+  label: "Thowan's Mod Utilities"
+  description: Development updates for My core VotV Utility mod.
+  permalink: /mod-utilities
+website:
+  label: Website
+  description: Updates to thowan-codes.github.io.
 
+# Development Experiences
+learning:
+  label: Learning
+  description: An experience where I learned something new or disillusioned an assumption.
+mistakes:
+  label: Mistakes
+  description: An experience where a mistake was made or discovered.
+successes:
+  label: Successes
+  description: An expereience where a success was had.
+setbacks:
+  label: Setbacks
+  description: An experience where a setback happened.
+rewrites:
+  label: Rewrites
+  description: Related to rewriting or refactoring a section of code.
+
+# Technologies
+unreal-engine:
+  label: Unreal Engine
+  description: Projects involving the Unreal Engine or Unreal Engine Editor
+blueprints:
+  label: Blueprints
+  description: Projects involving using the blueprint visiual scripting.
+ue4ss:
+  label: UE4SS
+  description: Projects using UE4SS for mod loading and troubleshooting.
+docusaurus:
+  label: Docusaurus
+  description: Static site generator (SSG) that builds this site.
+c-sharp:
+  label: C#
+  description: Coding language
+java:
+  label: Java
+  description: Coding language
+react: 
+  label: React
+  description: Scripting language
+
+# Related Games
 voices-of-the-void:
   label: Voices of the Void
   description: Mods and projects for Voices of the Void.
+minecraft:
+  label: Minecraft
+  description: Mods, plugins, or projects for Minecraft.
 
-site:
-  label: Site
-  description: Updates to thowan-codes.github.io.
+
 
 personal:
   label: Personal
