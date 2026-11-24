@@ -2,10 +2,6 @@
 signals-and-symbols:
   label: Signals & Symbols
   description: Development updates for the Signals & Symbols VotV mod.
-mod-utilties:
-  label: "Thowan's Mod Utilities"
-  description: Development updates for My core VotV Utility mod.
-  permalink: /mod-utilities
 thowans-mod-utilities:
   label: "Thowan's Mod Utilities"
   description: Development updates for My core VotV Utility mod.
