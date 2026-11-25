@@ -5,9 +5,9 @@ import type * as Preset from '@docusaurus/preset-classic';
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
 const config: Config = {
-  title: 'Thowan',
-  tagline: 'Where Thowan comes to share his thoughts and projects.',
-  favicon: 'img/docusaurus/favicon.ico',
+  title: 'Welcome to my little corner of the internet.',
+  tagline: "A collection of my projects, experiments, thoughts, mistakes, and things I've learned along the way.",
+  favicon: 'img/thowan/ThowanBigGrin.jpg',
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
   future: {
@@ -89,9 +89,21 @@ const config: Config = {
               position: 'left',
               items: [
                   {
-                      label: 'Signals & Symbols',
+                      label: "Signals & Symbols",
                       to: '/projects/signals-and-symbols',
                   },
+                {
+                  label: "Thowan's Mod Utilities",
+                  to: '/projects/thowans-mod-utilities',
+                },
+                {
+                  label: "Eminence",
+                  to: '/projects/eminence',
+                },
+                {
+                  label: "Alpha Base Improvements",
+                  to: '/projects/alpha-base-improvements',
+                },
                   ],
               },
 

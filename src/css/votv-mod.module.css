@@ -6,13 +6,12 @@
   color: white;
 
   background:
-    linear-gradient(
-      to top,
-      rgba(5, 8, 14, 0.94),
-      rgba(5, 8, 14, 0.18)
-    ),
-    url('/img/VotV/VotV-SS1.png')
-      center / cover no-repeat;
+          linear-gradient(
+                  to top,
+                  rgba(5, 8, 14, 0.94),
+                  rgba(5, 8, 14, 0.18)
+          ),
+          var(--hero-image) center / cover no-repeat;
 }
 
 .heroContent {

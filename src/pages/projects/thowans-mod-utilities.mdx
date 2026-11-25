@@ -1,0 +1,65 @@
+---
+title: Thowan's Mod Utilities — VotV Mod
+description: A Voices of the Void mod by Thowan.
+hide_table_of_contents: true
+slug: /projects/thowans-mod-utilities
+---
+
+import styles from '@site/src/css/votv-mod.module.css';
+import ImageGallery from '@site/src/components/ImageGallery';
+
+<div className={styles.hero}style={{'--hero-image': "url('/img/Votv/VotV-Wireframe.png')"}}>
+  <div className={styles.heroContent}>
+    <p className={styles.eyebrow}>Voices of the Void Mod</p>
+    <h1>Thowan's Mod Utilities</h1>
+    <p>
+      A core mod for other Voices of the Void mods created by Thowan.
+    </p>
+  </div>
+</div>
+
+<section className={styles.projectContent}>
+
+<img
+  className={styles.projectIcon}
+  src="/img/projects/thowans-mod-utilities/tmu_icon.png"
+  alt="Thowan's Mod Utility icon"
+/>
+
+## At a Glance
+- **Status:** In development
+- **Role:** Solo Developer
+- **Started:** November 2026
+- **Links:** [GitHub](https://github.com/thowan-codes/Thowans_Mod_Utilities) · [Thunderstore]() · [Devlog](http://localhost:3000/devlog/tags/thowans-mod-utilities)
+- **AI Usage:** Corrections and Troubleshooting
+    - Equivalent of Spell Check
+
+## What it is
+A core mod for other Voices of the Void mods created by Thowan. It provides information about the game without having to completely recreate the development research every time.
+
+### Current Features
+- Registers mods that implement it's registration API
+  - Mods that register get access to information from Voices of the Void as well as other game details.
+- Provides config editing to mods that register to it.
+
+### Why I made it
+I kept finding myself having to do the same research over and over again into the Voices of the Void UI and realized I could create a one stop shop for all the information I needed.
+
+## Current focus
+- Initial API creation
+- Adding Config Loading, Editing, and Saving
+- In case this is out of date, updates can typically be found under the GitHub [Issues](https://github.com/thowan-codes/Thowans_Mod_Utilities/issues)
+
+## Screenshots
+
+<ImageGallery
+  images={[
+    {
+      src: '/img/projects/thowans-mod-utilities/preview-configscreen.png',
+      alt: 'Preview of what the config menu will look like.',
+      caption: 'Preview of what the config menu will look like.',
+    },
+  ]}
+/>
+
+</section>

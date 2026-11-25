@@ -19,14 +19,26 @@
   }
 }
 
-.buttons {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+@media screen and (max-width: 600px) {
+  .heroContent {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .heroImage {
+    max-width: 100%;
+  }
 }
 
 .projects {
   padding: 4rem 0;
+  text-align: center;
+}
+
+.heroContent {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
   text-align: center;
 }
 
@@ -37,3 +49,75 @@
     margin: 2rem auto 0;
     border-radius: 0.75rem;
 }
+
+/* review Thowan */
+
+/* Holds all the project cards in a vertical stack */
+.projectList {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+/* Makes each link look like a full-width card */
+.projectCard {
+  display: block;
+  padding: 1rem;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  border-radius: 0.75rem;
+  color: var(--ifm-font-color-base);
+  text-align: left;
+  text-decoration: none;
+  flex: 0 1 26rem;
+}
+
+/* Gives mouse and keyboard users feedback */
+.projectCard:hover {
+  border-color: var(--ifm-color-primary);
+  color: var(--ifm-font-color-base);
+  text-decoration: none;
+}
+
+.projectCard:focus-visible {
+  outline: 2px solid var(--ifm-color-primary);
+  outline-offset: 3px;
+}
+
+/* Keeps the title and status on opposite sides */
+.projectHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 1rem;
+}
+
+.projectTitle {
+  font-weight: bold;
+  font-size: 1.25rem;
+}
+
+.projectStatus {
+  color: var(--ifm-color-emphasis-700);
+  font-style: italic;
+}
+
+.projectDescription {
+  margin: 0.5rem 0 0;
+  font-size: 0.95rem;
+}
+
+.about {
+  padding: 2rem 1rem 4rem;
+}
+
+.about > div {
+  max-width: 50rem;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.about h2 {
+  text-align: center;
+}
+
